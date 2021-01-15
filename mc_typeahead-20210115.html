@@ -1,9 +1,15 @@
 <style>
-#CB_1407>.Content>.Form>.FormField{
+#CB_1407>.Content>.Form>.FormField {
  position: relative;
 }
 </style>
-<script type="text/javascript" src="https://raw.githubusercontent.com/woksihd/autocomplate-js/main/autocomplate-js.js"></script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/gh/woksihd/autocomplate-js/autocomplate-js.js"></script>
+
+<script>
+  var values = ["Próba 1", "Zsák 1", "Sajtos rúd 1"];
+  autocomplete(document.getElementById("Project_SzeriaSzam"), values);
+  console.log(values[1]);
+</script>
 <script>
   var pcto;
   $('#Project_SzeriaSzam').change(function() {
@@ -14,7 +20,4 @@
           window.location.hash = window.location.hash.split('?', 1)[0] + '?' + timestamp;
       }, 5000);
   });
-
-  var values = ["Próba 1", "Zsák 1", "Sajtos rúd 1"]
-  autocomplete(document.getElementById("Project_SzeriaSzam"), values);
 </script>

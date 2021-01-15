@@ -1,4 +1,4 @@
-console.log('autocomplate.js loaded from Github!')
+console.log('Loding autocomplate.js from Github through jsdelivr.net!')
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
@@ -95,3 +95,4 @@ document.addEventListener("click", function (e) {
     closeAllLists(e.target);
 });
 }
+console.log('autocomplate.js from Github through jsdelivr.net LOADED!')
